@@ -1,51 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario de adopción</title>
-    <link rel="icon" href="img/logo.jpg">
-</head>
-<body>
+    <link rel="icon" href="img/logo.jpg" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Patitas Felices</h1>
-        <a href="index.html">
-            <img src="img/logo-patitas-felices.JPG" alt="logo perro y gato del refugio" width= "150px">
-        </a>
-    <nav>
-       
-           
-     <a href="adopciones.html">Adopciones</a>
-     <a href="nosotros.html">Sobre Nosotros</a>
-       
-    </nav>
-</header>
-<main>
-<section>
-    <h2>Formulario de adopción</h2>
-    <form action="">
-        <label for="camponombre"><b>Nombre:</b><br></label>
-        <input type="text" id="camponombre" placeholder="Nombre" name="nombre" required><br>
-        <label for="campoapellido"><b>Apellido:</b><br></label>
-        <input type="text" id="campoapellido" placeholder="Apellido" name="apellido" required><br>
-        <label for="animalelegido"><b>Me interesa adoptar a:</b><br></label>
-        <select name="animalelegido" id="adopciones">
+      <a href="index.html">
+        <img
+          src="img/logo-patitas-felices.JPG"
+          alt="logo perro y gato del refugio"
+          width="150px"
+        />
+      </a>
+      <nav>
+        <a href="adopciones.html">Adopciones</a>
+        <a href="nosotros.html">Sobre Nosotros</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Patitas Felices</h1>
+      <section>
+        <h2>Formulario de adopción</h2>
+        <form action="">
+          <label for="camponombre"><b>Nombre:</b><br /></label>
+          <input
+            type="text"
+            id="camponombre"
+            placeholder="Nombre"
+            name="nombre"
+            required
+          /><br />
+          <label for="campoapellido"><b>Apellido:</b><br /></label>
+          <input
+            type="text"
+            id="campoapellido"
+            placeholder="Apellido"
+            name="apellido"
+            required
+          /><br />
+          <label for="animalelegido"><b>Me interesa adoptar a:</b><br /></label>
+          <select name="animalelegido" id="adopciones">
             <option value="tommy">Tommy</option>
-            <option value="charly">Charly</option>
-        </select><br>
-        <label for="campoemail"><b>Email:</b><br></label>
-        <input type="text" id="campoemail" placeholder="Email" name="email" required><br>
-        <label for="comentarios"><b>Comentarios</b><br></label>
-        <textarea name="areatexto" id="comentarios" rows="5" cols="30"></textarea><br>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar todo">
-    </form>
-</section>
-</main>
-<footer>
-    <a href="contacto">Contactanos</a>
-    <a href="donaciones">Doná Acá</a>
-    <p>Todos los derechos reservados</p>
-</footer>
-</body>
+            <option value="charly">Charly</option></select
+          ><br />
+          <label for="campoemail"><b>Email:</b><br /></label>
+          <input
+            type="text"
+            id="campoemail"
+            placeholder="Email"
+            name="email"
+            required
+          /><br />
+          <label for="comentarios"><b>Comentarios</b><br /></label>
+          <textarea
+            name="areatexto"
+            id="comentarios"
+            rows="5"
+            cols="30"
+          ></textarea
+          ><br />
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Borrar todo" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a href="contacto">Contactanos</a>
+      <a href="donaciones">Doná Acá</a>
+      <p>Todos los derechos reservados</p>
+    </footer>
+  </body>
 </html>

@@ -2,3 +2,9 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    font-family: Verdana;
+    background: linear-gradient(150deg,#ecf0f1, #bcaaa4);
+    height: 100vh;
+}
