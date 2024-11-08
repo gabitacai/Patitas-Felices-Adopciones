@@ -2,18 +2,22 @@
     margin: 0;
     padding: 0;
     font-family: Verdana;
-    
+    box-sizing: border-box;
 }
 
-.bodygeneral{
-    background: linear-gradient(150deg,#ecf0f1, #bcaaa4);
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
 }
 
-.bodyformularios{
+ .bodyformularios{
     
     background: linear-gradient(150deg,#ecf0f1, #bcaaa4);
-    height: 100vh;
+    min-height: 100vh;
 }
+
 
 .formulario{
     position: absolute;
