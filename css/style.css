@@ -1,10 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Verdana;
+    
 }
 
-body{
-    font-family: Verdana;
+.bodygeneral{
+    background: linear-gradient(150deg,#ecf0f1, #bcaaa4);
+}
+
+.bodyformularios{
+    
     background: linear-gradient(150deg,#ecf0f1, #bcaaa4);
     height: 100vh;
 }
@@ -60,6 +66,31 @@ form .username {
     transition: .5s;
     
 }
+.opcionesadopciones{
+    color: #adadad;
+    margin-bottom: 15px;
+     
+}
+
+.select select{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #94847e;
+    border-radius: 12px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.select select:hover{
+    border-color: #383737;
+    transition: .5s;
+}
+
+
 
 .username span::before{
     content: '';
@@ -105,10 +136,29 @@ input[type="submit"]{
     outline: none;
 }
 
+input[type="reset"]{
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #94847e;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
 input[type="submit"]:hover{
     border-color: #383737;
     transition: .5s;
 }
+
+input[type="reset"]:hover{
+    border-color: #383737;
+    transition: .5s;
+}
+
 
 .registrarse{
     margin: 30px 0;

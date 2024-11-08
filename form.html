@@ -7,69 +7,54 @@
     <link rel="icon" href="img/logo.jpg" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="bodyformularios">
     <header>
       <a href="index.html">
         <img
           src="img/logo-patitas-felices.JPG"
           alt="logo perro y gato del refugio"
-          width="150px"
+          width="100px"
         />
       </a>
       <nav>
         <a href="adopciones.html">Adopciones</a>
         <a href="nosotros.html">Sobre Nosotros</a>
+        <a href="login.html">Inciar sesión</a>
       </nav>
     </header>
     <main>
-      <section>
-        <div class="formulario">
-          <h1>Formulario de adopción</h1>
-          <form action="">
-            <label for="camponombre"><b>Nombre:</b><br /></label>
-            <input
-              type="text"
-              id="camponombre"
-              placeholder="Nombre"
-              name="nombre"
-              required
-            /><br />
-            <label for="campoapellido"><b>Apellido:</b><br /></label>
-            <input
-              type="text"
-              id="campoapellido"
-              placeholder="Apellido"
-              name="apellido"
-              required
-            /><br />
-            <label for="animalelegido"
-              ><b>Me interesa adoptar a:</b><br
-            /></label>
+      <div class="formulario">
+        <h1>Formulario de adopción</h1>
+        <form method="post">
+          <div class="username">
+            <input type="text" required />
+            <label for="camponombre"><b>Nombre:</b></label>
+          </div>
+          <div class="username">
+            <input type="text" required />
+            <label for="campoapellido"><b>Apellido:</b></label>
+          </div>
+          <div class="opcionesadopciones">
+            <label for="animalelegido"><b>Me interesa adoptar a:</b></label>
+          </div>
+          <div class="select">
             <select name="animalelegido" id="adopciones">
               <option value="tommy">Tommy</option>
-              <option value="charly">Charly</option></select
-            ><br />
-            <label for="campoemail"><b>Email:</b><br /></label>
-            <input
-              type="text"
-              id="campoemail"
-              placeholder="Email"
-              name="email"
-              required
-            /><br />
-            <label for="comentarios"><b>Comentarios</b><br /></label>
-            <textarea
-              name="areatexto"
-              id="comentarios"
-              rows="5"
-              cols="30"
-            ></textarea
-            ><br />
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Borrar todo" />
-          </form>
-        </div>
-      </section>
+              <option value="charly">Charly</option>
+            </select>
+          </div>
+          <div class="username">
+            <input type="text" required />
+            <label for="campoemail"><b>Email:</b></label>
+          </div>
+          <div class="username">
+            <input type="text" required />
+            <label for="comentarios"><b>Comentarios:</b></label>
+          </div>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Borrar todo" />
+        </form>
+      </div>
     </main>
   </body>
 </html>
