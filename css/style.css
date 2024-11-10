@@ -11,9 +11,47 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #cec3bf ;
+    font-weight: bold;
+    
+}
+
+.logo-inicio{
+    max-width: 15rem;
+
+ }
+
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+     
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #383737;
+}
+
+.nav-list a:hover{
+    background-color:#94847e ;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    transition: .3s;
+   
+
+}
+
  .bodyformularios{
     
-    background: linear-gradient(150deg,#ecf0f1, #bcaaa4);
+    background: #ecf0f1;
     min-height: 100vh;
 }
 
@@ -21,12 +59,13 @@ body {
 .formulario{
     position: absolute;
     padding: 30px;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background: white;
+    background: rgb(253, 253, 253);
     border-radius: 10px;
+    box-shadow: 3px 3px 10px #a2a2a2;
     
 }
 
