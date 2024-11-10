@@ -15,7 +15,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
     background-color: #cec3bf ;
     font-weight: bold;
     
@@ -23,11 +23,13 @@ header{
 
 .logo-inicio{
     max-width: 15rem;
+    padding-left: 10px;
 
  }
 
 
 .nav-list {
+    padding-right: 10px;
     list-style-type: none;
     display: flex;
     gap: 2rem;
