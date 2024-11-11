@@ -7,62 +7,24 @@ body{
     margin: 0;
 }
 
-
-header{
-    background-color: #c9bbb5 ;
-}
-
-header .container{
+#form{
+    background-color: #cec3bfc9;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
-
-header .logo-texto{
-    margin: 0;
-    padding: 10px;
-    font-weight: bold;
-    color: #383737;
-    font-size: 1.4em;
-}
-
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-nav a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #383737;
-}
-
-nav a:hover{
-    background-color: #94847e;
-    color: white;
-    border-radius: 8px;
-    transition: .3s;
-}
-
 
 .formulario{
-    position: absolute;
+    margin-block: 3rem;
     padding: 30px;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 400px;
     background: rgb(253, 253, 253);
     border-radius: 10px;
     box-shadow: 3px 3px 10px #a2a2a2;
-
-    
 }
 
 .formulario h1 {
+    font-size: 2.3rem;
     text-align: center;
     color: #383737;
     padding: 0 0 20px 0;
@@ -102,12 +64,19 @@ form .username {
     
 }
 .opcionesadopciones{
-    color: #797979;
+    color: #383737;
     margin-bottom: 15px;
+    font-size: 1rem;
      
 }
 
-.select select{
+.select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+ 
+.select select {
     text-align: center;
     width: 100%;
     height: 50px;
@@ -115,10 +84,26 @@ form .username {
     background: #ffffff;
     border-radius: 12px;
     font-size: 18px;
-    color: #797979;
+    color: #383737;
     cursor: pointer;
     outline: none;
+    padding-right: 30px; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
+ 
+
+.select::after {
+    content: '▼';
+    position: absolute;
+    right: 15px; 
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #797979;
+}
+
 
 .select select:hover{
     border-color: #383737;
@@ -127,25 +112,53 @@ form .username {
 
 
 
-.username span::before{
+.username {
+    position: relative;
+    margin-bottom: 20px; /* Espacio e/ inputs */
+}
+ 
+.username span::before {
     content: '';
     position: absolute;
     top: 40px;
     left: 0;
-    width: 100%;
+    width: 0; /* Empieza en 0 y se expande al enfocar */
     height: 2px;
-    background: #383737;
-    transition: .5s;
+    background: #666666;
+    transition: width 0.5s ease; /* Transición suave línea */
 }
-
+ 
+.username input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    position: relative;
+    background: none;
+    color: #383737;
+}
+ 
+.username label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #797979;
+    font-size: 18px;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease; /* Transición label */
+}
+ 
+/* Mantiene label elevado cuando el input tiene texto o está enfocado */
 .username input:focus ~ label,
-.username input:focus ~ label{
+.username input:not(:placeholder-shown) ~ label {
     top: -5px;
-    color:#383737;
+    color: #383737;
+    font-size: 1rem;
 }
-
-.username input:focus ~ span ::before,
-.username input:focus ~ span::before{
+ 
+/* Línea de fondo que se expande solo en focus */
+.username input:focus ~ span::before {
     width: 100%;
 }
 
@@ -186,11 +199,17 @@ input[type="reset"]{
 
 input[type="submit"]:hover{
     border-color: #383737;
+    font-weight: bold;
+    background-color: white;
+    color: #94847e;
     transition: .5s;
 }
 
 input[type="reset"]:hover{
     border-color: #383737;
+    font-weight: bold;
+    background-color: white;
+    color: #94847e;
     transition: .5s;
 }
 
@@ -211,34 +230,3 @@ input[type="reset"]:hover{
     text-decoration: underline;
 }
 
-footer{
-    background-color: #c9bbb5 ;
-}
-
-footer h4, p {
-    margin: 20px;
-    font-size: 1.1em;
-    color: #383737;
-}
-
-footer .container{
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-links a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #383737;
-}
-
-.footer-links a:hover{
-    background-color: #94847e;
-    color: white;
-    border-radius: 8px;
-    transition: .3s;
-}
