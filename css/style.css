@@ -202,3 +202,58 @@ footer .container{
     border-radius: 8px;
     transition: .3s;
 }
+
+@media(min-width:720px){
+  
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    header .logo-texto{
+        display: none;
+    }
+    
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 4em;
+    }
+
+    #sobre-nosotros p{
+        margin: 0;
+    }
+
+    #sobre-nosotros h2{
+        margin-top: 0;
+    }
+
+    #sobre-nosotros .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #sobre-nosotros .texto-nosotros{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    #sobre-nosotros .imagen-nosotros{
+        background-image: url(/img/rescatistas.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 650px;
+        width: 500px;
+    }
+}
