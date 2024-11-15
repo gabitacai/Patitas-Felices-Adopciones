@@ -170,6 +170,52 @@ nav a:hover{
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(/img/gato-2.jpg);
 }
 
+#hero-productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(/img/fondo-productos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero-productos h1{
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    font-size: 2.8rem;
+}
+
+#info-productos .container{
+    text-align: center;
+    padding: 180px 12px;
+}
+
+#info-productos h2{
+    color: #383737;
+    text-shadow: 2px 2px 6px rgba(156, 155, 155, 0.5);
+}
+
+#info-productos p{
+    font-weight: 500;
+}
+
+#error{
+    background-color: #cec3bfc9;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#error img{
+    margin-block: 3rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #a2a2a2;
+}
+
 footer{
     background-color: #c9bbb5 ;
     bottom: 0;
@@ -225,12 +271,21 @@ footer .container{
         font-size: 4em;
     }
 
-    #sobre-nosotros p{
+    #hero-productos h1{
+        font-size: 3.8rem;
+    }
+
+    #info-productos, #sobre-nosotros p{
         margin: 0;
     }
 
-    #sobre-nosotros h2{
+    #info-productos, #sobre-nosotros h2{
         margin-top: 0;
+    }
+
+    #info-productos .container{
+        display: flex;
+        justify-content: space-evenly;
     }
 
     #sobre-nosotros .container{
@@ -246,11 +301,29 @@ footer .container{
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }    
+
+    #info-productos .texto-productos{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         
     }
 
     #sobre-nosotros .imagen-nosotros{
         background-image: url(/img/rescatistas.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 650px;
+        width: 500px;
+    }
+
+    #info-productos .perros-jugando{
+        background-image: url(/img/perros-juguete.jpg);
         background-size: cover;
         background-position: center center;
         height: 650px;
