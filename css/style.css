@@ -41,7 +41,7 @@ button:hover{
 }
 
 .container img{
-    max-width: 7em;
+    max-width: 6em;
 }
 
 .color-acento{
@@ -236,16 +236,24 @@ footer .container{
 }
 
 .footer-links a{
-    padding: 5px 12px;
+    margin: 8px;
     text-decoration: none;
     font-weight: bold;
     color: #383737;
+    background-color: #94847e;
+    font-size: 1.3rem;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    
 }
 
 .footer-links a:hover{
-    background-color: #94847e;
     color: white;
-    border-radius: 8px;
     transition: .3s;
 }
 
