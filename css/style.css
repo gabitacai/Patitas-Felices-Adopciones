@@ -223,7 +223,7 @@ footer{
 
 footer h4, p {
     margin: 20px;
-    font-size: 1em;
+    font-size: 1.1em;
     color: #383737;
 }
 
@@ -320,6 +320,10 @@ footer .container{
         flex-direction: column;
         justify-content: center;
         
+    }
+
+    .texto-productos p{
+        margin: 0;
     }
 
     #sobre-nosotros .imagen-nosotros{
