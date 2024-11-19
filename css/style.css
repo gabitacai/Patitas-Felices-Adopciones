@@ -154,6 +154,16 @@ nav a:hover{
     border-radius: 15px;
 }
 
+.card a{
+    text-decoration: none;
+    color: white;
+}
+
+.card a:hover{
+    color: #94847e;
+
+}
+
 .card:first-child{
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(/img/perro-1.jpg);
 }
