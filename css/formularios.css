@@ -121,16 +121,7 @@ form .username {
     margin-bottom: 20px; /* Espacio e/ inputs */
 }
  
-.username span::before {
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 0; /* Empieza en 0 y se expande al enfocar */
-    height: 2px;
-    background: #666666;
-    transition: width 0.5s ease; /* Transición suave línea */
-}
+
  
 .username input {
     width: 100%;
@@ -143,7 +134,7 @@ form .username {
     background: none;
     color: #383737;
 }
- 
+
 .username label {
     position: absolute;
     top: 10px;
@@ -157,14 +148,11 @@ form .username {
 .username input:focus ~ label,
 .username input:not(:placeholder-shown) ~ label {
     top: -5px;
-    color: #383737;
+    color: #373738;
     font-size: 1rem;
 }
  
-/* Línea de fondo que se expande solo en focus */
-.username input:focus ~ span::before {
-    width: 100%;
-}
+
 
 .recordar{
     margin: -5px 0 20px 5px;
