@@ -30,8 +30,7 @@ button{
 button:hover{
     border-color: #383737;
     font-weight: bold;
-    background-color: white;
-    color: #94847e;
+    background-color: #6a5f5b;
     transition: .5s;
 }
 
@@ -104,6 +103,7 @@ nav a:hover{
 #hero h1{
     color: white;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    font-size: 2.6rem;
 }
 
 
@@ -160,10 +160,6 @@ nav a:hover{
     color: white;
 }
 
-.card a:hover{
-    color: #94847e;
-
-}
 
 .card:first-child{
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(/img/perro-1.jpg);
@@ -197,7 +193,7 @@ nav a:hover{
 #hero-productos h1{
     color: white;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    font-size: 2.8rem;
+    font-size: 2.6rem;
 }
 
 #info-productos .container{
@@ -370,20 +366,19 @@ footer .container{
     }
 
     #nuestros-rescatados h3{
-        margin-top: 60px;
+        margin-top: 90px;
         font-size: 1.2em;
     }
 
     #nuestros-rescatados button{
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     #nuestros-rescatados .card{
-        padding: 50px;
-        background-size: 100% 200px;
+        display: block;
+        width: 100%;
         background-repeat: no-repeat;
         background-position-y: 0;
-        background-color: #ffffffa4;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
 
