@@ -2,12 +2,12 @@ document.getElementById("header").innerHTML = `
 
       <div class="container">
         <a href="index.html"
-          ><img src="img/favicon.PNG" alt="logo gato y perro juntos"
+          ><img src="img/logo-principal.png" alt="logo gato y perro juntos"
         /></a>
-        <p class="logo-texto">Patitas Felices</p>
         <nav>
+          <a href="index.html">Inicio</a>
           <a href="productos.html">Productos</a>
-          <a href="form.html">Formulario de Adopción</a>
+          <a href="form.html">Formulario Adopción</a>
           <a href="login.html">Iniciar sesión</a>
           <a href="registro.html">Resgistro</a>
         </nav>
