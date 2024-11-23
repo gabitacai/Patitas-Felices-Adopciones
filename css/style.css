@@ -108,6 +108,7 @@ nav a:hover{
     padding: 180px 12px;
 }
 
+
 #sobre-nosotros h2{
     color: #383737;
     text-shadow: 2px 2px 6px rgba(156, 155, 155, 0.5);
@@ -125,6 +126,7 @@ nav a:hover{
 
 #nuestros-rescatados .container{
     padding: 130px 0px;
+
 }
 
 #nuestros-rescatados h2{
@@ -142,6 +144,12 @@ nav a:hover{
     display: none;
 }
 
+
+.card a{
+    text-decoration: none;
+    color: white;
+}
+
 #nuestros-rescatados .card{
     background-position: center center;
     background-size: cover;
@@ -149,12 +157,9 @@ nav a:hover{
     margin: 20px;
     border-radius: 15px;
     height: auto;
+    width: 60%;
+    display: inline-block;
     
-}
-
-.card a{
-    text-decoration: none;
-    color: white;
 }
 
 
@@ -261,7 +266,28 @@ footer .container{
     transition: .3s;
 }
 
-@media(min-width:728px){
+@media (max-width: 1060px){
+    #nuestros-rescatados .adopciones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    #nuestros-rescatados .card{
+        background-position: center center;
+        background-size: cover;
+        padding: 50px;
+        margin: 20px;
+        border-radius: 15px;
+        height: auto;
+        width: 60%;
+        display: inline-block;
+        
+    }
+}
+
+@media (min-width: 1060px){
   
     header .container{
         flex-direction: row;
@@ -373,7 +399,7 @@ footer .container{
 
     #nuestros-rescatados .card{
         display: block;
-        width: 80%;
+        flex: 1 1 300px;
         background-repeat: no-repeat;
         background-position-y: 0;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
@@ -402,4 +428,3 @@ footer .container{
 
 
 }
-

@@ -222,3 +222,15 @@ input[type="reset"]:hover{
     text-decoration: underline;
 }
 
+.input-error {
+    background-color: #ffe6e6; /* Fondo rojo claro */
+    color: red !important;  /* Cambia el color del texto */
+  }
+
+.hidden{
+    display: none;
+}
+
+.span{
+    color: red !important;
+}
