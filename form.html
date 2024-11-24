@@ -21,7 +21,7 @@
   </head>
   <body>
     <header id="header"></header>
-    <section id="form">
+    <!-- <section id="form">
       <div class="formulario">
         <h1>Formulario de adopción</h1>
         <form method="post">
@@ -60,7 +60,44 @@
           <input type="reset" value="Borrar todo" />
         </form>
       </div>
+    </section>-->
+    <section id="form">
+      <div class="formulario">
+        <h1>Formulario de adopción</h1>
+        <form method="post">
+          <div class="username">
+            <label for="username"><b>Nombre:</b></label>
+            <input type="text" id="username" required />
+          </div>
+          <div class="username">
+            <label for="apellido"><b>Apellido:</b></label>
+            <input type="text" id="apellido" required />
+          </div>
+          <div class="opcionesadopciones">
+            <label for="animalelegido"><b>Me interesa adoptar a:</b></label>
+          </div>
+          <div class="select">
+            <select name="animalelegido" id="adopciones">
+              <option value="vaquita">Mora</option>
+              <option value="nina">Nina</option>
+              <option value="garfield">Garfield</option>
+              <option value="dongato">Don Gato</option>
+            </select>
+          </div>
+          <div class="username">
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="username">
+            <label for="comentarios"><b>Comentarios:</b></label>
+            <textarea id="comentarios" required></textarea>
+          </div>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Borrar todo" />
+        </form>
+      </div>
     </section>
+
     <footer id="footer"></footer>
     <script src="js/script.js"></script>
   </body>
