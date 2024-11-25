@@ -28,15 +28,17 @@
         <form id="form-login" method="post">
           <div class="username">
             <label for="campoemail"><b>Email:</b></label>
-            <input type="text" id="campoemail" required />
+            <input type="email" name="email" id="email" required />
             <span id="error-email" class="hidden span"
-              >Campo email requerido</span
+              >Por favor, ingrese un email válido.</span
             >
           </div>
           <div class="username">
             <label for="contrasena"><b>Contraseña:</b></label>
-            <input type="password" id="contrasena" required />
-            <span></span>
+            <input type="password" name="password" id="password" required />
+            <span id="error-password" class="hidden"
+              >Por favor, ingrese su contraseña.</span
+            >
           </div>
           <div class="reestablecer">
             <a href="#">¿Olvidaste tu contraseña?</a>
