@@ -27,27 +27,32 @@
         <h1>Formulario de adopción</h1>
         <form id="form-adopciones">
           <div class="username">
-            <label for="username"><b>Nombre:</b></label>
-            <input type="text" id="username" />
+            <label for="name-adopt"><b>Nombre:*</b></label>
+            <input type="text" id="name-adopt" />
+            <span id="error-name-adopt" class="hidden span"></span>
           </div>
           <div class="username">
-            <label for="apellido"><b>Apellido:</b></label>
-            <input type="text" id="apellido" />
+            <label for="lastname-adopt"><b>Apellido:*</b></label>
+            <input type="text" id="lastname-adopt" />
+            <span id="error-lastname-adopt" class="hidden span"></span>
           </div>
           <div class="opcionesadopciones">
-            <label for="animalelegido"><b>Me interesa adoptar a:</b></label>
+            <label for="animalelegido"><b>Me interesa adoptar a:*</b></label>
           </div>
           <div class="select">
             <select name="animalelegido" id="adopciones">
+              <option value="vacio" id="seleccionar">(Seleccione una opción)*</option>
               <option value="vaquita">Mora</option>
               <option value="nina">Nina</option>
               <option value="garfield">Garfield</option>
               <option value="dongato">Don Gato</option>
             </select>
           </div>
+          <span id="error-adopciones" class="hidden span"></span>
           <div class="username">
-            <label for="email"><b>Email:</b></label>
-            <input type="email" id="email" />
+            <label for="email-adopt"><b>Email:*</b></label>
+            <input type="email" id="email-adopt" />
+            <span id="error-email-adopt" class="hidden span"></span>
           </div>
           <div class="username">
             <label for="comentarios"><b>Comentarios:</b></label>
@@ -61,5 +66,6 @@
 
     <footer id="footer"></footer>
     <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>

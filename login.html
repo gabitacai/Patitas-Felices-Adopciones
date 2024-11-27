@@ -27,13 +27,14 @@
         <h1>Iniciar Sesión</h1>
         <form id="form-login">
           <div class="username">
-            <label for="campoemail"><b>Email:</b></label>
+            <label for="campoemail"><b>Email:*</b></label>
             <input type="text" name="email" id="email-login" />
             <span id="error-email" class="hidden span"></span>
           </div>
           <div class="username">
-            <label for="contrasena"><b>Contraseña:</b></label>
+            <label for="contrasena"><b>Contraseña:*</b></label>
             <input type="password" name="password" id="password-login" />
+            <small>*La contraseña debe tener un mínimo de 8 caracteres y un caracter especial.</small>
             <span id="error-password" class="hidden"
               >Por favor, ingrese su contraseña.</span
             >
