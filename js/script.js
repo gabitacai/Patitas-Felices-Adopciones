@@ -11,6 +11,7 @@ document.getElementById("header").innerHTML = `
           <a href="login.html">Iniciar sesión</a>
           <a href="registro.html">Resgistro</a>
         </nav>
+        <button id="mode-toggle" class="mode-toggle">Modo Oscuro</button>
       </div>
    
 `;
@@ -23,7 +24,7 @@ document.getElementById("footer").innerHTML = `
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-whatsapp"></a>
         </div>
-        <p>&copy; Patitas Felices 2024</p>
+        <p class="p-footer">&copy; Patitas Felices 2024</p>
       </div>
       
     `;
