@@ -109,6 +109,7 @@ nav a:hover{
 
 .texto-nosotros p{
     font-weight: 500;
+    line-height: 180%;
 }
 
 .color-acento{
@@ -412,6 +413,7 @@ footer .container{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        line-height: 180%;
     }    
 
     #info-productos .texto-productos{
