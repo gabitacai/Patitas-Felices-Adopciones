@@ -2,7 +2,7 @@ document.getElementById("header").innerHTML = `
 
       <div class="container">
         <a href="index.html"
-          ><img src="img/logo-principal.png" alt="logo gato y perro juntos"
+          ><img class"logo-light-mode" src="img/logo-principal.png" alt="logo gato y perro juntos"
         /></a>
         <nav>
           <a href="index.html">Inicio</a>

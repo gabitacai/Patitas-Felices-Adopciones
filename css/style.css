@@ -64,10 +64,9 @@ header .container {
     align-items: center;
 }
 
-header img {
+.container img {
     max-width: 12rem;
 }
-
 
 header nav {
     display: flex;
