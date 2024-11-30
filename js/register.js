@@ -1,90 +1,129 @@
-const nameRegister = document.getElementById('name-register')
-const emailRegister = document.getElementById('email-register')
-const telRegister = document.getElementById('tel-register')
-const passwordRegister = document.getElementById('password-register')
-const repeatRegister = document.getElementById('repeat-register')
-const errorNameRegister = document.getElementById('error-name-register')
-const errorEmailRegister = document.getElementById('error-email-register')
-const errorTelRegister = document.getElementById('error-tel-register')
-const errorPasswordRegister = document.getElementById('error-password-register')
-const errorRepeatRegister = document.getElementById('error-repeat-register')
+const nameRegister = document.getElementById('name-register');
+const emailRegister = document.getElementById('email-register');
+const telRegister = document.getElementById('tel-register');
+const passwordRegister = document.getElementById('password-register');
+const repeatRegister = document.getElementById('repeat-register');
+const errorNameRegister = document.getElementById('error-name-register');
+const errorEmailRegister = document.getElementById('error-email-register');
+const errorTelRegister = document.getElementById('error-tel-register');
+const errorPasswordRegister = document.getElementById('error-password-register');
+const errorRepeatRegister = document.getElementById('error-repeat-register');
 
-const formRegistro = document.getElementById('form-registro');
-formRegistro.addEventListener('submit', (event) => {
-    event.preventDefault();
+// Validar nombre
+const validarNombre = () => {
+  const nameValue = nameRegister.value.trim();
+  if (nameValue === '') {
+    errorNameRegister.textContent = 'Ingrese su nombre';
+    errorNameRegister.classList.remove('hidden');
+    nameRegister.classList.add('input-error');
+  } else {
+    errorNameRegister.classList.add('hidden');
+    errorNameRegister.textContent = '';
+    nameRegister.classList.remove('input-error');
+  }
+};
 
-    if(nameRegister.value === ''){
-        errorNameRegister.textContent = 'Ingrese su nombre'
-        errorNameRegister.classList.remove('hidden');
-        errorNameRegister.classList.add('error-text');
-        nameRegister.classList.add('input-error'); 
-    } else{
-        errorNameRegister.classList.add('hidden');
-        nameRegister.classList.remove('input-error')
-    }
+// Validar email
+const validarEmail = () => {
+  const emailValue = emailRegister.value.trim();
+  if (emailValue === '') {
+    errorEmailRegister.textContent = 'Ingrese su email';
+    errorEmailRegister.classList.remove('hidden');
+    emailRegister.classList.add('input-error');
+  } else if (!/\S+@\S+\.\S+/.test(emailValue)) {
+    errorEmailRegister.textContent = 'Ingrese un email válido';
+    errorEmailRegister.classList.remove('hidden');
+    emailRegister.classList.add('input-error');
+  } else {
+    errorEmailRegister.classList.add('hidden');
+    errorEmailRegister.textContent = '';
+    emailRegister.classList.remove('input-error');
+  }
+};
 
-    if(emailRegister.value === '') {
-        errorEmailRegister.textContent = 'Ingrese su email'
-        errorEmailRegister.classList.remove('hidden');
-        errorEmailRegister.classList.add('error-text');
-        emailRegister.classList.add('input-error'); 
-    } else if(!/\S+@\S+\.\S+/.test(emailRegister.value)){
-        errorEmailRegister.textContent = 'Ingrese un email válido'
-        errorEmailRegister.classList.remove('hidden');
-        errorEmailRegister.classList.add('error-text');
-        emailRegister.classList.add('input-error'); 
-    }else{
-        errorEmailRegister.classList.add('hidden');
-        emailRegister.classList.remove('input-error')
-    }
+// Validar teléfono
+const validarTelefono = () => {
+  const telValue = telRegister.value.trim();
+  if (telValue === '') {
+    errorTelRegister.textContent = 'Ingrese su teléfono';
+    errorTelRegister.classList.remove('hidden');
+    telRegister.classList.add('input-error');
+  } else if (telValue.length < 10) {
+    errorTelRegister.textContent = 'El teléfono debe tener 10 números';
+    errorTelRegister.classList.remove('hidden');
+    telRegister.classList.add('input-error');
+  } else {
+    errorTelRegister.classList.add('hidden');
+    errorTelRegister.textContent = '';
+    telRegister.classList.remove('input-error');
+  }
+};
 
-    if(telRegister.value === '') {
-        errorTelRegister.textContent = 'Ingrese su teléfono'
-        errorTelRegister.classList.remove('hidden');
-        errorTelRegister.classList.add('error-text');
-        telRegister.classList.add('input-error'); 
-    } else if(telRegister.value.length<10){
-        errorTelRegister.textContent = 'El teléfono debe tener 10 números'
-        errorTelRegister.classList.remove('hidden');
-        errorTelRegister.classList.add('error-text');
-        telRegister.classList.add('input-error'); 
-    } else{
-        errorTelRegister.classList.add('hidden');
-        telRegister.classList.remove('input-error')
-    }
+// Validar contraseña
+const validarPassword = () => {
+  const passwordValue = passwordRegister.value.trim();
+  if (passwordValue === '') {
+    errorPasswordRegister.textContent = 'Ingrese una contraseña';
+    errorPasswordRegister.classList.remove('hidden');
+    passwordRegister.classList.add('input-error');
+  } else if (!/[!@#$%^&*()_\-+=[\]{};':"\\|,.<>/?]+/.test(passwordValue)) {
+    errorPasswordRegister.textContent = 'La contraseña debe tener caracteres especiales';
+    errorPasswordRegister.classList.remove('hidden');
+    passwordRegister.classList.add('input-error');
+  } else if (passwordValue.length < 8) {
+    errorPasswordRegister.textContent = 'La contraseña debe tener un mínimo de 8 caracteres';
+    errorPasswordRegister.classList.remove('hidden');
+    passwordRegister.classList.add('input-error');
+  } else {
+    errorPasswordRegister.classList.add('hidden');
+    errorPasswordRegister.textContent = '';
+    passwordRegister.classList.remove('input-error');
+  }
+};
 
-    if(passwordRegister.value === '') {
-        errorPasswordRegister.textContent = 'Ingrese una contraseña'
-        errorPasswordRegister.classList.remove('hidden');
-        errorPasswordRegister.classList.add('error-text');
-        passwordRegister.classList.add('input-error'); 
-    } else if(!/[!@#$%^&*()_\-+=[\]{};':"\\|,.<>/?]+/.test(passwordRegister.value)){
-        errorPasswordRegister.textContent = 'La contraseña debe tener caracteres especiales'
-        errorPasswordRegister.classList.remove('hidden');
-        errorPasswordRegister.classList.add('error-text');
-        passwordRegister.classList.add('input-error'); 
-    }else if(passwordRegister.value.length<8){
-        errorPasswordRegister.textContent = 'La contraseña debe tener un mínimo de 8 caracteres'
-        errorPasswordRegister.classList.remove('hidden');
-        errorPasswordRegister.classList.add('error-text');
-        passwordRegister.classList.add('input-error'); 
-    } else{
-        errorPasswordRegister.classList.add('hidden');
-        passwordRegister.classList.remove('input-error')
-    }
+// Validar repetición de contraseña
+const validarRepeatPassword = () => {
+  const repeatValue = repeatRegister.value.trim();
+  const passwordValue = passwordRegister.value.trim();
+  if (repeatValue === '') {
+    errorRepeatRegister.textContent = 'Vuelva a ingresar la contraseña';
+    errorRepeatRegister.classList.remove('hidden');
+    repeatRegister.classList.add('input-error');
+  } else if (repeatValue !== passwordValue) {
+    errorRepeatRegister.textContent = 'Las contraseñas deben coincidir';
+    errorRepeatRegister.classList.remove('hidden');
+    repeatRegister.classList.add('input-error');
+  } else {
+    errorRepeatRegister.classList.add('hidden');
+    errorRepeatRegister.textContent = '';
+    repeatRegister.classList.remove('input-error');
+  }
+};
 
-    if(repeatRegister.value === '') {
-        errorRepeatRegister.textContent = 'Vuelva a ingresar la contraseña'
-        errorRepeatRegister.classList.remove('hidden');
-        errorRepeatRegister.classList.add('error-text');
-        repeatRegister.classList.add('input-error'); 
-    } else if(repeatRegister.value != passwordRegister){
-        errorRepeatRegister.textContent = 'Las contraseñas deben coincidir'
-        errorRepeatRegister.classList.remove('hidden');
-        errorRepeatRegister.classList.add('error-text');
-        repeatRegister.classList.add('input-error'); 
-    } else{
-        errorRepeatRegister.classList.add('hidden');
-        repeatRegister.classList.remove('input-error')
-    }
+// Validación al enviar el formulario
+document.getElementById('form-registro').addEventListener('submit', (event) => {
+  event.preventDefault();
+  validarNombre();
+  validarEmail();
+  validarTelefono();
+  validarPassword();
+  validarRepeatPassword();
+
+  // Si no hay errores visibles, muestra éxito
+  if (
+    errorNameRegister.classList.contains('hidden') &&
+    errorEmailRegister.classList.contains('hidden') &&
+    errorTelRegister.classList.contains('hidden') &&
+    errorPasswordRegister.classList.contains('hidden') &&
+    errorRepeatRegister.classList.contains('hidden')
+  ) {
+    alert('¡Formulario enviado con éxito!');
+  }
 });
+
+// Validación en tiempo real
+nameRegister.addEventListener('input', validarNombre);
+emailRegister.addEventListener('input', validarEmail);
+telRegister.addEventListener('input', validarTelefono);
+passwordRegister.addEventListener('input', validarPassword);
+repeatRegister.addEventListener('input', validarRepeatPassword);

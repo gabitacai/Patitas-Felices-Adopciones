@@ -2,6 +2,7 @@ const emailLogin = document.getElementById('email-login');
 const passwordLogin = document.getElementById('password-login');
 const errorEmailLogin = document.getElementById('error-email');
 const errorPasswordLogin = document.getElementById('error-password');
+
  
 // Validar el email
 const validarEmail = () => {
@@ -42,7 +43,7 @@ const validarPassword = () => {
     passwordLogin.classList.remove('input-error'); // Remueve la clase de error
   }
 };
- 
+
 // Validación al enviar el formulario
 document.getElementById('form-login').addEventListener('submit', (event) => {
   event.preventDefault();
