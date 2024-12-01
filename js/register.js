@@ -9,7 +9,7 @@ const errorTelRegister = document.getElementById('error-tel-register');
 const errorPasswordRegister = document.getElementById('error-password-register');
 const errorRepeatRegister = document.getElementById('error-repeat-register');
 
-// Validar nombre
+
 const validarNombre = () => {
   const nameValue = nameRegister.value.trim();
   if (nameValue === '') {
@@ -23,7 +23,7 @@ const validarNombre = () => {
   }
 };
 
-// Validar email
+
 const validarEmail = () => {
   const emailValue = emailRegister.value.trim();
   if (emailValue === '') {
@@ -41,7 +41,7 @@ const validarEmail = () => {
   }
 };
 
-// Validar teléfono
+
 const validarTelefono = () => {
   const telValue = telRegister.value.trim();
   if (telValue === '') {
@@ -59,7 +59,7 @@ const validarTelefono = () => {
   }
 };
 
-// Validar contraseña
+
 const validarPassword = () => {
   const passwordValue = passwordRegister.value.trim();
   if (passwordValue === '') {
@@ -81,7 +81,7 @@ const validarPassword = () => {
   }
 };
 
-// Validar repetición de contraseña
+
 const validarRepeatPassword = () => {
   const repeatValue = repeatRegister.value.trim();
   const passwordValue = passwordRegister.value.trim();
@@ -100,7 +100,6 @@ const validarRepeatPassword = () => {
   }
 };
 
-// Validación al enviar el formulario
 document.getElementById('form-registro').addEventListener('submit', (event) => {
   event.preventDefault();
   validarNombre();
@@ -109,7 +108,7 @@ document.getElementById('form-registro').addEventListener('submit', (event) => {
   validarPassword();
   validarRepeatPassword();
 
-  // Si no hay errores visibles, muestra éxito
+  
   if (
     errorNameRegister.classList.contains('hidden') &&
     errorEmailRegister.classList.contains('hidden') &&
@@ -121,9 +120,11 @@ document.getElementById('form-registro').addEventListener('submit', (event) => {
   }
 });
 
-// Validación en tiempo real
+
 nameRegister.addEventListener('input', validarNombre);
 emailRegister.addEventListener('input', validarEmail);
 telRegister.addEventListener('input', validarTelefono);
 passwordRegister.addEventListener('input', validarPassword);
 repeatRegister.addEventListener('input', validarRepeatPassword);
+
+

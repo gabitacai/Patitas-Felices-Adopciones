@@ -8,7 +8,7 @@ const errorLastnameAdopt = document.getElementById('error-lastname-adopt');
 const errorSelectAdopt = document.getElementById('error-adopciones');
 const errorEmailAdopt = document.getElementById('error-email-adopt');
 
-// Validar nombre
+
 const validarNombre = () => {
   const nameValue = nameAdopt.value.trim();
   if (nameValue === '') {
@@ -22,7 +22,7 @@ const validarNombre = () => {
   }
 };
 
-// Validar apellido
+
 const validarApellido = () => {
   const lastNameValue = lastNameAdopt.value.trim();
   if (lastNameValue === '') {
@@ -36,7 +36,7 @@ const validarApellido = () => {
   }
 };
 
-// Validar selección
+
 const validarSeleccion = () => {
   const selectValue = selectAdopt.value;
   if (selectValue === 'vacio') {
@@ -50,7 +50,7 @@ const validarSeleccion = () => {
   }
 };
 
-// Validar email
+
 const validarEmail = () => {
   const emailValue = emailAdopt.value.trim();
   if (emailValue === '') {
@@ -68,7 +68,7 @@ const validarEmail = () => {
   }
 };
 
-// Validación al enviar el formulario
+
 document.getElementById('form-adopciones').addEventListener('submit', (event) => {
   event.preventDefault();
   validarNombre();
@@ -76,7 +76,7 @@ document.getElementById('form-adopciones').addEventListener('submit', (event) =>
   validarSeleccion();
   validarEmail();
 
-  // Verifica si no hay errores visibles antes de enviar
+  
   if (
     errorNameAdopt.classList.contains('hidden') &&
     errorLastnameAdopt.classList.contains('hidden') &&
@@ -87,7 +87,7 @@ document.getElementById('form-adopciones').addEventListener('submit', (event) =>
   }
 });
 
-// Validación en tiempo real
+
 nameAdopt.addEventListener('input', validarNombre);
 lastNameAdopt.addEventListener('input', validarApellido);
 selectAdopt.addEventListener('change', validarSeleccion);
