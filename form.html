@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Refugio Patitas Felices" content="Perros y gatos" />
+    <meta name="clasification" content="refugio, rescate de animales" />
+    <meta
+      name="description"
+      content="refugio para animales, rescates y venta de productos"
+    />
+    <meta name="keywords" content="Refugio" />
+    <title>Formulario de adopción</title>
+    <link rel="icon" href="img/favicon.PNG" />
+    <link rel="stylesheet" href="css/formularios.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <section id="form" class="background-form">
+      <div class="formulario">
+        <h1>Formulario de adopción</h1>
+        <form id="form-adopciones">
+          <div class="username">
+            <label for="name-adopt"><b>Nombre:*</b></label>
+            <input type="text" id="name-adopt" />
+            <span id="error-name-adopt" class="hidden error-text"></span>
+          </div>
+          <div class="username">
+            <label for="lastname-adopt"><b>Apellido:*</b></label>
+            <input type="text" id="lastname-adopt" />
+            <span id="error-lastname-adopt" class="hidden error-text"></span>
+          </div>
+          <div class="opcionesadopciones">
+            <label for="animalelegido"><b>Me interesa adoptar a:*</b></label>
+          </div>
+          <div class="select">
+            <select name="animalelegido" id="adopciones">
+              <option value="vacio" id="seleccionar">
+                (Seleccione una opción)*
+              </option>
+              <option value="vaquita">Mora</option>
+              <option value="nina">Nina</option>
+              <option value="garfield">Garfield</option>
+              <option value="dongato">Don Gato</option>
+            </select>
+          </div>
+          <span id="error-adopciones" class="hidden error-text"></span>
+          <br />
+          <div class="username">
+            <label for="email-adopt"><b>Email:*</b></label>
+            <input type="email" id="email-adopt" />
+            <span id="error-email-adopt" class="hidden error-text"></span>
+          </div>
+          <div class="username">
+            <label for="comentarios"><b>Comentarios:</b></label>
+            <textarea id="comentarios"></textarea>
+          </div>
+          <button type="submit" class="btn-form">Enviar</button>
+          <button type="reset" class="btn-form">Borrar todo</button>
+        </form>
+      </div>
+    </section>
+
+    <footer id="footer"></footer>
+    <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/dark-mode.js"></script>
+  </body>
+</html>

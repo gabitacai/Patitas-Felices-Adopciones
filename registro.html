@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Refugio Patitas Felices" content="Perros y gatos" />
+    <meta name="clasification" content="refugio, rescate de animales" />
+    <meta
+      name="description"
+      content="refugio para animales, rescates y venta de productos"
+    />
+    <meta name="keywords" content="Refugio" />
+    <title>Registrarse</title>
+    <link rel="icon" href="img/favicon.PNG" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/formularios.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <section id="form" class="background-form">
+      <div class="formulario">
+        <h1>Registrarse</h1>
+        <form id="form-registro">
+          <div class="username">
+            <label for="name-register"><b>Nombre:*</b></label>
+            <input type="text" id="name-register" />
+            <span id="error-name-register" class="hidden error-text"></span>
+          </div>
+          <div class="username">
+            <label for="email-register"><b>Email:*</b></label>
+            <input type="text" id="email-register" />
+            <span id="error-email-register" class="hidden error-text"></span>
+          </div>
+          <div class="username">
+            <label for="tel-register"><b>Teléfono:*</b></label>
+            <input type="number" id="tel-register" />
+            <span id="error-tel-register" class="hidden error-text"></span>
+          </div>
+          <div class="username">
+            <label for="password-register"><b>Contraseña:*</b></label>
+            <input type="password" id="password-register" />
+            <small
+              >*La contraseña debe tener un mínimo de 8 caracteres y un caracter
+              especial.</small
+            >
+            <br />
+            <span id="error-password-register" class="hidden error-text"></span>
+          </div>
+          <div class="username">
+            <label for="repeat-register"><b>Confirmar contraseña:*</b></label>
+            <input type="password" id="repeat-register" />
+            <span id="error-repeat-register" class="hidden error-text"></span>
+          </div>
+
+          <button type="submit" class="btn-form">Crear cuenta</button>
+          <div class="registrarse">
+            ¿Ya tenés usuario? <a href="login.html">Iniciar sesión</a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer id="footer"></footer>
+    <script src="js/script.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/dark-mode.js"></script>
+  </body>
+</html>
