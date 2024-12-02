@@ -331,6 +331,7 @@ footer .container {
     border: 1px solid rgba(0, 0, 0, 0.5);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     background-color: rgb(255, 255, 255);
+    color: #000000;
     cursor: pointer;
     outline: none;
 }
@@ -344,6 +345,47 @@ footer .container {
     font-weight: bold;
     background-color: #c8c7c7;
     transition: .5s;
+    color: #000000;
+}
+
+.dark-mode .btn-form{
+    background-color: #636363;
+    color: white;
+    border-radius: 25px;
+}
+
+.dark-mode .background-form{
+    background-color: #333333;
+}
+
+.dark-mode .formulario{
+    background-color: #1e1e1e95;
+    box-shadow: 3px 3px 10px #414141;
+}
+
+.dark-mode .formulario h1{
+    color: white;
+}
+
+.dark-mode .username label{
+    color: white;
+}
+
+.dark-mode .opcionesadopciones{
+    color: white;
+}
+
+.dark-mode small{
+    color: white;
+}
+.dark-mode .registrarse{
+    color: white;
+}
+.dark-mode .registrarse a{
+    color: #ff8a04;
+}
+.dark-mode .reestablecer a{
+    color: #ff8a04;
 }
 
 .dark-mode #error{
