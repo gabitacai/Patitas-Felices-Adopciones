@@ -1,0 +1,76 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "img": "../img/collar-gato.jpg",
+            "alt": "Collares de gato en colores pastel con cascabel desmontable",
+            "categoria": "accesorios",
+            "titulo": "Collar Gato",
+            "descripcion": "Collares para gatos con cascabel desmontable. Varios colores.",
+            "precio": 1500
+        },
+        {
+            "id": 2,
+            "img": "../img/palita-arenero.jpg",
+            "alt": "Palita sanitaria para limpiar arenero de gato",
+            "categoria": "sanitario",
+            "titulo": "Palita Sanitaria",
+            "descripcion": "Palita sanitaria de plástico para limpiar arenero de gato.",
+            "precio": 1000
+        },
+        {
+            "id": 3,
+            "img": "../img/comedero-automatico-gatos.jpg",
+            "alt": "Comedero automático para gatos o perros pequeños",
+            "categoria": "alimentos",
+            "titulo": "Comedero Automático",
+            "descripcion": "Dispensador de comida automático para gatos o perros de raza pequeña.",
+            "precio": 13000
+        },
+        {
+            "id": 4,
+            "img": "../img/juguete-gato-raton.jpg",
+            "alt": "Juguete para gato con forma de ratón",
+            "categoria": "juguetes",
+            "titulo": "Juguete de Ratón",
+            "descripcion": "Juguete para gatos con forma de ratón, ideal para gatitos bebés.",
+            "precio": 2300
+        },
+        {
+            "id": 5,
+            "img": "../img/correa-perro.jpg",
+            "alt": "Correa para perro de 2 metros en ecocuero",
+            "categoria": "accesorios",
+            "titulo": "Correa para perro",
+            "descripcion": "Correa para perros, material ecocuero. Varios colores.",
+            "precio": 4500
+        },
+        {
+            "id": 6,
+            "img": "../img/peine-perro-gato.jpg",
+            "alt": "Peine de metal para perros y gatos",
+            "categoria": "sanitario",
+            "titulo": "Peine para Perros/Gatos",
+            "descripcion": "Peine con cerdas de metal para perros y gatos.",
+            "precio": 3200
+        },
+        {
+            "id": 7,
+            "img": "../img/kit-inicial-perro.jpg",
+            "alt": "Kit inicial para cachorro con comedero, juguete y dispenser de bolsitas",
+            "categoria": "alimentos",
+            "titulo": "Kit Inicial Cachorro",
+            "descripcion": "Comedero, soga trenzada y dispenser de bolsitas sanitarias.",
+            "precio": 10000
+        },
+        {
+            "id": 8,
+            "img": "../img/pelota-perro.jpg",
+            "alt": "Pelota de goma para perro en diversos colores",
+            "categoria": "juguetes",
+            "titulo": "Pelota",
+            "descripcion": "Pelota de goma para perros. Varios colores",
+            "precio": 1500
+        }
+    ]
+}

@@ -1,172 +1,525 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif !important;
-    margin: 0;
-    min-height: 100vh;
-    transition: background-color 0.3s, color 0.3s;
+  font-family: "Roboto", sans-serif !important;
+  margin: 0;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 h1 {
-    font-size: 3.5em;
+  font-size: 3.5em;
 }
 
 h2 {
-    font-size: 2.7em;
+  font-size: 2.7em;
 }
 
 h3 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 h4 {
-    font-size: 1.3em;
+  font-size: 1.3em;
 }
 
 p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 button {
-    font-size: 1em;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    color: white;
-    background-color: #94847e;
-    cursor: pointer;
-    outline: none;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #94847e;
+  cursor: pointer;
+  outline: none;
 }
 
 button:hover {
-    border-color: #383737;
-    font-weight: bold;
-    background-color: #6a5f5b;
-    transition: .5s;
+  border-color: #383737;
+  font-weight: bold;
+  background-color: #6a5f5b;
+  transition: 0.5s;
 }
 
 .container {
-    max-width: 1400px;
-    margin: auto;
+  max-width: 1400px;
+  margin: auto;
 }
 
-
 header {
-    background-color: #c9bbb5;
-    transition: background-color 0.3s, color 0.3s;
+  background-color: #c9bbb5;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container img {
-    max-width: 11rem;
-    margin: 5px;
+  max-width: 11rem;
+  margin: 5px;
 }
 
 header nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
 }
 
 nav a {
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #383737;
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #383737;
 }
 
 nav a:hover {
-
-    color: white;
-    text-shadow: 1px 1px 5px #383737;
-    transition: .3s;
+  color: white;
+  text-shadow: 1px 1px 5px #383737;
+  transition: 0.3s;
 }
 
 #hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 90vh;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/perritos-inicio.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/img/perritos-inicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 #hero h1 {
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    font-size: 2.6rem;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  font-size: 2.6rem;
 }
-
 
 #sobre-nosotros .container {
-    text-align: center;
-    padding: 180px 12px;
+  text-align: center;
+  padding: 180px 12px;
 }
 
-
 .texto-nosotros h2 {
-    color: #383737;
-    text-shadow: 2px 2px 6px rgba(156, 155, 155, 0.5);
+  color: #383737;
+  text-shadow: 2px 2px 6px rgba(156, 155, 155, 0.5);
 }
 
 .texto-nosotros p {
-    font-weight: 500;
-    line-height: 180%;
+  font-weight: 500;
+  line-height: 180%;
 }
 
 .color-acento {
-    color: #94847e;
+  color: #94847e;
 }
 
-
 #nuestros-rescatados {
-    background-color: #cec3bfc9;
-    color: white;
-    text-align: center;
+  background-color: #cec3bfc9;
+  color: white;
+  text-align: center;
 }
 
 #nuestros-rescatados .container {
-    padding: 130px 0px;
-
+  padding: 130px 0px;
 }
 
 h2 {
-    margin-top: 0;
-    font-size: 2.5em;
-    color: #383737;
-    text-shadow: 2px 2px 6px rgba(156, 155, 155, 0.5);
+  margin-top: 0;
+  font-size: 2.5em;
+  color: #383737;
+  text-shadow: 2px 2px 6px rgba(156, 155, 155, 0.5);
 }
 
 #nuestros-rescatados h3 {
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .p-nosotros,
 .p-footer {
-    color: #383737;
+  color: #383737;
 }
 
-
 .card a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 #nuestros-rescatados .card {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+  height: auto;
+  width: 60%;
+  display: inline-block;
+}
+
+.card p {
+  color: white;
+}
+
+.card:first-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/img/perro-1.jpg);
+}
+
+.card:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/img/perro-2.jpg);
+}
+
+.card:nth-child(3) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/img/gato-1.jpg);
+}
+
+.card:nth-child(4) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(/img/gato-2.jpg);
+}
+
+#hero-productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(/img/fondo-productos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero-productos h1 {
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  font-size: 2.6rem;
+}
+
+#info-productos .container {
+  text-align: center;
+  padding: 180px 12px;
+}
+
+.texto-productos h2 {
+  color: #383737;
+  text-shadow: 2px 2px 6px rgba(156, 155, 155, 0.5);
+}
+
+.texto-productos p {
+  font-weight: 500;
+  line-height: 180%;
+}
+
+#error {
+  background-color: #cec3bfc9;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#error img {
+  margin-block: 3rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #a2a2a2;
+}
+
+footer {
+  background-color: #c9bbb5;
+  bottom: 0;
+}
+
+footer h4 p {
+  margin: 20px;
+  font-size: 1.1em;
+  color: #383737;
+}
+
+footer .container {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links a {
+  margin: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #383737;
+  background-color: #94847e8e;
+  font-size: 1.3rem;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+.theme-switch {
+  position: relative;
+  width: 75px;
+  height: 30px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.theme-switch label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.switch-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #a39590;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.switch-circle {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  transition: transform 0.3s ease, left 0.3s ease;
+}
+
+.theme-switch input:checked + label .switch-background {
+  background-color: #555555;
+}
+
+.theme-switch input:checked + label .switch-circle {
+  left: calc(100% - 35px);
+}
+
+/* Dark mode css */
+
+.dark-mode .mode-toggle {
+  background: white;
+  border: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #121212;
+}
+.dark-mode header {
+  background-color: #212121;
+}
+
+.dark-mode header a {
+  color: white;
+}
+
+.dark-mode header a:hover {
+  color: #b6b6b6;
+}
+
+.dark-mode button {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  cursor: pointer;
+  outline: none;
+}
+
+.dark-mode button a {
+  color: #000000;
+}
+
+.dark-mode button:hover {
+  border-color: #383737;
+  font-weight: bold;
+  background-color: #c8c7c7;
+  transition: 0.5s;
+  color: #000000;
+}
+
+.dark-mode #error {
+  background-color: #121212;
+}
+.dark-mode #error img {
+  filter: opacity(90%);
+}
+
+.dark-mode .texto-nosotros h2 {
+  color: #f1f1f1;
+}
+
+.dark-mode .texto-productos h2 {
+  color: #f1f1f1;
+}
+
+.dark-mode .p-nosotros {
+  color: white;
+}
+
+.dark-mode #nuestros-rescatados {
+  background-color: #000000;
+}
+
+.dark-mode .container h2 {
+  color: white;
+  text-shadow: 2px 2px 6px rgba(156, 155, 155, 0.5);
+}
+
+
+.dark-mode .container-cards {
+  background-color: #000000;
+}
+
+.dark-mode .filtros{
+    background-color: #000000;
+}
+
+.dark-mode .label-prod{
+    color: white;
+}
+
+.dark-mode .card-prod {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode .card-title {
+  color: white;
+}
+
+.dark-mode .card-text {
+  color: white;
+}
+
+.dark-mode .btn-prod {
+  background-color: white;
+  color: #000000;
+  padding: 15px 50px;
+  border-radius: 25px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.dark-mode .btn-prod:hover {
+  background-color: #6f6f6f;
+  color: #ffffff;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.dark-mode footer {
+  background-color: #212121;
+}
+
+.dark-mode .p-footer {
+  color: white;
+}
+
+.dark-mode h4 {
+  color: white !important;
+}
+
+.dark-mode .footer-links a {
+  margin: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: #838383b7;
+  font-size: 1.3rem;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
+}
+
+.dark-mode .footer-links a:hover {
+  color: #383737;
+  transition: 0.3s;
+}
+
+@media (max-width: 1060px) {
+  #nuestros-rescatados .adopciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nuestros-rescatados .card {
     background-position: center center;
     background-size: cover;
     padding: 50px;
@@ -175,478 +528,164 @@ h2 {
     height: auto;
     width: 60%;
     display: inline-block;
-
-}
-
-.card p {
-    color: white;
-}
-
-.card:first-child {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/perro-1.jpg);
-}
-
-.card:nth-child(2) {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/perro-2.jpg);
-}
-
-.card:nth-child(3) {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/gato-1.jpg);
-}
-
-.card:nth-child(4) {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/gato-2.jpg);
-}
-
-#hero-productos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 90vh;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/fondo-productos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-#hero-productos h1 {
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    font-size: 2.6rem;
-}
-
-#info-productos .container {
-    text-align: center;
-    padding: 180px 12px;
-}
-
-.texto-productos h2 {
-    color: #383737;
-    text-shadow: 2px 2px 6px rgba(156, 155, 155, 0.5);
-}
-
-.texto-productos p {
-    font-weight: 500;
-    line-height: 180%;
-}
-
-#error {
-    background-color: #cec3bfc9;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-#error img {
-    margin-block: 3rem;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px #a2a2a2;
-}
-
-footer {
-    background-color: #c9bbb5;
-    bottom: 0;
-}
-
-footer h4,
-p {
-    margin: 20px;
-    font-size: 1.1em;
-    color: #383737;
-}
-
-footer .container {
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-links a {
-    margin: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #383737;
-    background-color: #94847e8e;
-    font-size: 1.3rem;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
-    transition: all .4s ease-in-out;
-
-}
-
-.footer-links a:hover {
-    color: white;
-    transition: .3s;
-}
-
-.theme-switch {
-    position: relative;
-    width: 75px;
-    height: 30px;
   }
-  
-  .theme-switch input {
-    display: none; 
-  }
-  
-  .theme-switch label {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .switch-background {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color:#a39590;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    overflow: hidden; 
-  }
-  
-  .switch-circle {
-    position: absolute;
-    top: 50%;
-    left: 5px; 
-    width: 28px;
-    height: 28px;
-    background-color: white;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    z-index: 2; 
-    transition: transform 0.3s ease, left 0.3s ease;
-  }
-  
-  .theme-switch input:checked + label .switch-background {
-    background-color: #555555; 
-  }
-  
-  .theme-switch input:checked + label .switch-circle {
-    left: calc(100% - 35px); 
-  }
-
-/* Dark mode css */
-
-.dark-mode .mode-toggle {
-    background: white;
-    border: none;
-    color: #333;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-
-}
-
-.dark-mode {
-    background-color: #121212;
-}
-.dark-mode header {
-    background-color: #212121;
-}
-
-.dark-mode header a {
-    color: white;
-}
-
-.dark-mode header a:hover {
-    color: #b6b6b6;
-}
-
-.dark-mode button {
-    font-size: 1em;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-    cursor: pointer;
-    outline: none;
-}
-
-.dark-mode button a{
-    color: #000000;
-}
-
-.dark-mode button:hover {
-    border-color: #383737;
-    font-weight: bold;
-    background-color: #c8c7c7;
-    transition: .5s;
-    color: #000000;
-}
-
-.dark-mode #error{
-    background-color: #121212;
-}
-.dark-mode #error img{
-    filter:opacity(90%)
-}
-
-.dark-mode .texto-nosotros h2 {
-    color: #f1f1f1;
-}
-
-.dark-mode .texto-productos h2{
-    color: #f1f1f1;
-}
-
-.dark-mode .p-nosotros {
-    color: white;
-}
-
-.dark-mode #nuestros-rescatados {
-    background-color: #000000;
-}
-
-.dark-mode .container h2 {
-    color: white;
-    text-shadow: 2px 2px 6px rgba(156, 155, 155, 0.5);
-}
-
-.dark-mode .container-cards{
-    background-color: #000000;
-}
-
-.dark-mode .card-prod{
-    background-color: #333;
-    color: white;
-}
-
-.dark-mode .card-title {
-    color: white;
-}
-
-.dark-mode .card-text{
-    color: white;
-}
-
-.dark-mode .btn-prod{
-    background-color: white;
-    color: #000000;
-}
-
-.dark-mode .btn-prod:hover{
-    background-color: #c8c7c7;
-    color: #000000;
-}
-
-.dark-mode footer {
-    background-color: #212121;
-
-}
-
-.dark-mode .p-footer {
-    color: white;
-}
-
-
-.dark-mode h4 {
-    color: white !important;
-}
-
-.dark-mode .footer-links a {
-    margin: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    background-color: #838383b7;
-    font-size: 1.3rem;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    transition: all .4s ease-in-out;
-
-}
-
-.dark-mode .footer-links a:hover {
-    color: #383737;
-    transition: .3s;
-}
-
-
-
-
-@media (max-width: 1060px) {
-    #nuestros-rescatados .adopciones {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    #nuestros-rescatados .card {
-        background-position: center center;
-        background-size: cover;
-        padding: 50px;
-        margin: 20px;
-        border-radius: 15px;
-        height: auto;
-        width: 60%;
-        display: inline-block;
-
-    }
 }
 
 @media (min-width: 1060px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    header .container {
-        flex-direction: row;
-        justify-content: space-between;
+  header .logo-texto {
+    display: none;
+  }
 
-    }
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
 
-    header .logo-texto {
-        display: none;
-    }
+  #hero h1 {
+    font-size: 4em;
+  }
 
-    header nav {
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
+  #hero-productos h1 {
+    font-size: 3.5rem;
+  }
 
-    #hero h1 {
-        font-size: 4em;
-    }
+  #info-productos,
+  #sobre-nosotros p {
+    margin: 0;
+  }
 
-    #hero-productos h1 {
-        font-size: 3.5rem;
-    }
+  #info-productos,
+  #sobre-nosotros h2 {
+    margin-top: 0;
+  }
 
-    #info-productos,
-    #sobre-nosotros p {
-        margin: 0;
-    }
+  #info-productos .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
 
-    #info-productos,
-    #sobre-nosotros h2 {
-        margin-top: 0;
-    }
+  #sobre-nosotros .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
 
-    #info-productos .container {
-        display: flex;
-        justify-content: space-evenly;
-    }
+  #sobre-nosotros .texto-nosotros {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 180%;
+  }
 
-    #sobre-nosotros .container {
-        display: flex;
-        justify-content: space-evenly;
-    }
+  #info-productos .texto-productos {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    #sobre-nosotros .texto-nosotros {
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        line-height: 180%;
-    }
+  .texto-productos p {
+    margin: 0;
+  }
 
-    #info-productos .texto-productos {
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+  #sobre-nosotros .imagen-nosotros {
+    background-image: url(/img/rescatistas.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 650px;
+    width: 500px;
+  }
 
-    }
+  #info-productos .perros-jugando {
+    background-image: url(/img/perros-juguete.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 650px;
+    width: 500px;
+  }
 
-    .texto-productos p {
-        margin: 0;
-    }
+  #nuestros-rescatados .adopciones {
+    display: flex;
+    justify-content: center;
+  }
 
-    #sobre-nosotros .imagen-nosotros {
-        background-image: url(/img/rescatistas.jpg);
-        background-size: cover;
-        background-position: center center;
-        height: 650px;
-        width: 500px;
-    }
+  #nuestros-rescatados p {
+    display: block;
+    font-size: 1em;
+    color: white;
+  }
 
-    #info-productos .perros-jugando {
-        background-image: url(/img/perros-juguete.jpg);
-        background-size: cover;
-        background-position: center center;
-        height: 650px;
-        width: 500px;
-    }
+  #nuestros-rescatados h2 {
+    font-size: 3em;
+  }
 
-    #nuestros-rescatados .adopciones {
-        display: flex;
-        justify-content: center;
-    }
+  #nuestros-rescatados h3 {
+    margin-top: 90px;
+    font-size: 1.2em;
+  }
 
-    #nuestros-rescatados p {
-        display: block;
-        font-size: 1em;
-        color: white;
+  #nuestros-rescatados button {
+    margin-top: 20px;
+  }
 
-    }
+  #nuestros-rescatados .card {
+    display: block;
+    flex: 1 1 300px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
 
-    #nuestros-rescatados h2 {
-        font-size: 3em;
-    }
+  .card:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(/img/perro-1.jpg);
+  }
 
-    #nuestros-rescatados h3 {
-        margin-top: 90px;
-        font-size: 1.2em;
-    }
+  .card:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(/img/perro-2.jpg);
+  }
 
-    #nuestros-rescatados button {
-        margin-top: 20px;
-    }
+  .card:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(/img/gato-1.jpg);
+  }
 
-    #nuestros-rescatados .card {
-        display: block;
-        flex: 1 1 300px;
-        background-repeat: no-repeat;
-        background-position-y: 0;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    }
+  .card:nth-child(4) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(/img/gato-2.jpg);
+  }
 
-    .card:first-child {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/perro-1.jpg);
-    }
-
-    .card:nth-child(2) {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/perro-2.jpg);
-    }
-
-    .card:nth-child(3) {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/gato-1.jpg);
-    }
-
-    .card:nth-child(4) {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/gato-2.jpg);
-    }
-
-    footer .container {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-
+  footer .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

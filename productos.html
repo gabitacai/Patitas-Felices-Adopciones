@@ -28,127 +28,25 @@
       <h1>Colaborá con el refugio comprando nuestros productos</h1>
     </section>
 
+    <div class="filtros">
+      <label class="label-prod" for="categoria">Filtrar por categoría:</label>
+      <select class="select-prod" id="categoria">
+        <option value="todos">Todos</option>
+        <option value="accesorios">Accesorios</option>
+        <option value="alimentos">Alimentos</option>
+        <option value="juguetes">Juguetes</option>
+        <option value="sanitario">Sanitarios</option>
+      </select>
+   
+      <label class="label-prod" for="orden">Ordenar por:</label>
+      <select class="select-prod" id="orden">
+        <option value="asc">Precio: Menor a Mayor</option>
+        <option value="desc">Precio: Mayor a Menor</option>
+      </select>
+    </div>
+
     <section id="productos" class="container-cards">
-      <div class="card-prod" style="width: 18rem">
-        <img
-          src="img/collar-gato.jpg"
-          class="card-img-top"
-          alt="collares de gato colores pastel con cascabel"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Collar Gato</h5>
-          <p class="card-text">
-            Collares para gatos, con cascabel desmontable. Colores pastel y
-            metalizados.
-          </p>
-          <button class="btn-prod">Comprar</button>
-        </div>
-      </div>
-
-      <div class="card-prod" style="width: 18rem">
-        <img
-          src="img/palita-arenero.JPG"
-          class="card-img-top"
-          alt="palita de plástico color beige con agujeros rejilla"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Palita Sanitaria</h5>
-          <p class="card-text">
-            Palita sanitaria para limpiar arenero de gato.
-          </p>
-          <button class="btn-prod">Comprar</button>
-        </div>
-      </div>
-
-      <div class="card-prod" style="width: 18rem">
-        <img
-          src="img/comedero-automatico-gatos.jpg"
-          class="card-img-top"
-          alt="comedero automatico blanco con plato metalico"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Comedero Automático</h5>
-          <p class="card-text">
-            Dispensador de comida automático para gatos o perros de raza
-            pequeña.
-          </p>
-          <button class="btn-prod">Comprar</button>
-        </div>
-      </div>
-
-      <div class="card-prod" style="width: 18rem">
-        <img
-          src="img/juguete-gato-raton.jpg"
-          class="card-img-top"
-          alt="ratón de juguete color beige con soga y palo de madera"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Juguete de Ratón</h5>
-          <p class="card-text">
-            Juguete para gatos con forma de ratón, ideal para gatitos.
-          </p>
-          <button class="btn-prod">Comprar</button>
-        </div>
-      </div>
-
-      <div class="card-prod" style="width: 18rem">
-        <img
-          src="img/correa-perro.jpg"
-          class="card-img-top"
-          alt="correa de ecocuero para perro color verde agua"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Correa para perro</h5>
-          <p class="card-text">
-            Correa 2 metros de largo, material ecocuero. Diversos colores
-          </p>
-          <button class="btn-prod">Comprar</button>
-        </div>
-      </div>
-
-      <div class="card-prod" style="width: 18rem">
-        <img
-          src="img/peine-perro-gato.jpg"
-          class="card-img-top"
-          alt="peine cepillo color verde agua"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Peine para Perros/Gatos</h5>
-          <p class="card-text">
-            Peine con cerdad de metal para perros y gatos.
-          </p>
-          <button class="btn-prod">Comprar</button>
-        </div>
-      </div>
-
-      <div class="card-prod" style="width: 18rem">
-        <img
-          src="img/kit-inicial-perro.JPG"
-          class="card-img-top"
-          alt="plato naranja juguete trenzado de sogas de colores y dispenser de bolsas sanitarias"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Kit Inicial Cachorro</h5>
-          <p class="card-text">
-            Comedero, juguete de soga trenzado y dispenser de bolsitas
-            sanitarias para los paseos.
-          </p>
-          <button class="btn-prod">Comprar</button>
-        </div>
-      </div>
-
-      <div class="card-prod" style="width: 18rem">
-        <img
-          src="img/pelota-perro.jpg"
-          class="card-img-top"
-          alt="perro jugando con una pelota color rojo"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Pelota</h5>
-          <p class="card-text">Pelota de goma para perro. Diversos colores</p>
-          <button class="btn-prod">Comprar</button>
-        </div>
-      </div>
+      <div id="productos-cards"></div>
     </section>
 
     <section id="info-productos">
@@ -171,5 +69,6 @@
     <footer id="footer"></footer>
     <script src="js/script.js"></script>
     <script src="js/dark-mode.js"></script>
+    <script src="js/productos.js"></script>
   </body>
 </html>

@@ -9,7 +9,7 @@ document.getElementById("header").innerHTML = `
           <a href="productos.html">Productos</a>
           <a href="form.html">Formulario Adopción</a>
           <a href="login.html">Iniciar sesión</a>
-          <a href="registro.html">Resgistro</a>
+          <a href="registro.html">Registro</a>
         </nav>
          <div class="theme-switch">
   <input type="checkbox" id="theme-toggle" />
