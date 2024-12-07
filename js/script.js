@@ -1,5 +1,5 @@
 document.getElementById("header").innerHTML = `
-  <div class="container">
+  <div class="container-header">
     <a href="index.html">
       <img class="logo-light-mode" src="img/logo-principal-new.png" alt="logo gato y perro juntos" />
     </a>
@@ -13,7 +13,7 @@ document.getElementById("header").innerHTML = `
       <a href="productos.html">Productos</a>
       <a href="form.html">Formulario Adopción</a>
       <a href="login.html">Iniciar sesión</a>
-      <a href="registro.html">Registro</a>
+      <a href="registro.html">Registro</a> 
       <div class="theme-switch" id="theme-switch-container">
         <!-- Código del switch existente -->
         <input type="checkbox" id="theme-toggle" />
