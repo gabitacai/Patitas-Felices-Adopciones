@@ -64,6 +64,7 @@ header .container-header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-inline: 10px;
 }
 
 .container-header img {
