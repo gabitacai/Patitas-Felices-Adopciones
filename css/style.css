@@ -478,6 +478,14 @@ footer .container {
   text-shadow: 2px 2px 6px rgba(156, 155, 155, 0.5);
 }
 
+.dark-mode .filtros{
+  background-color: #000000;
+}
+
+.dark-mode .label-prod{
+  color: white !important;
+}
+
 .dark-mode .container-cards{
   background-color: #000000;
 }
