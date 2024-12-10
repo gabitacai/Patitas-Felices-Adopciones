@@ -64,7 +64,6 @@ header .container-header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-inline: 10px;
 }
 
 .container-header img {
@@ -596,7 +595,6 @@ footer .container {
       flex-direction: row;
       position: static;
       background: none;
-      padding: 0;
     }
   
     .menu a {
@@ -611,12 +609,6 @@ footer .container {
 
   header .logo-texto {
       display: none;
-  }
-
-  header nav {
-      flex-direction: row;
-      padding-bottom: 0;
-      padding-right: 20px;
   }
 
   #hero h1 {
