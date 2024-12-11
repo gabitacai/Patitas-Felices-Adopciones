@@ -160,7 +160,7 @@ const validarRepeatPassword = () => {
   document.getElementById('form-registro').addEventListener('submit', (event) => {
     event.preventDefault();
     if (validarNombre() && validarEmail() && validarTelefono() && validarPassword() && validarRepeatPassword()) {
-      alert('¡Formulario enviado con éxito!');
+      alert('Se envió un email de confirmación, revise su correo electrónico.');
     }
   });
 

@@ -76,6 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
 document.getElementById('form-login').addEventListener('submit', (event) => {
   event.preventDefault();
   if (validarEmail() && validarPassword()) {
-    alert('¡Formulario enviado con éxito!');
+    alert('Sesión Iniciada');
   }
 });

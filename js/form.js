@@ -115,8 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.getElementById('form-adopciones').addEventListener('submit', (event) => {
-  event.preventDefault();
-  if (validarNombre() && validarApellido() && validarSeleccion() && validarEmail()) {
-    alert('¡Formulario enviado con éxito!');
+  if (!(validarNombre() && validarApellido() && validarSeleccion() && validarEmail())) {
+    event.preventDefault();
   }
 });
