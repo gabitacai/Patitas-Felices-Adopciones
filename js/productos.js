@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     let productos = [];
 
-    // Cargar JSON
     fetch("../json/productos.json")
         .then(response => response.json())
         .then(data => {
@@ -10,11 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => console.error("Error al cargar el JSON:", error));
 
-    // Mostrar productos en el DOM
+    
     function mostrarProductos(lista) {
         if (!Array.isArray(lista)) {             console.error("La lista de productos no es un array");             return; }
         const contenedor = document.getElementById("productos");
-        contenedor.innerHTML = ""; // Limpiar contenido
+        contenedor.innerHTML = ""; 
         lista.forEach(producto => {
             const card = document.createElement("div");
             card.className = "prod-card";
@@ -41,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Filtros y Ordenamiento
     const categoriaSelect = document.getElementById("categoria");
     const ordenSelect = document.getElementById("orden");
 
@@ -51,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function aplicarFiltros() {
         let productosFiltrados = [...productos];
 
-        // Filtro por categoría
         const categoria = categoriaSelect.value;
         if (categoria !== "todos") {
             productosFiltrados = productosFiltrados.filter(
@@ -59,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
             );
         }
 
-        // Ordenamiento
         const orden = ordenSelect.value;
         if (orden === "asc") {
             productosFiltrados.sort((a, b) => a.precio - b.precio);
